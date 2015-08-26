@@ -7,6 +7,17 @@
   </head>
   <body>
 
-    <%=@team.params%>
+  <p>  Team name: <%=@team.params["team"]["name"]%></p>
+  <p>  Team motto: <%=@team.params["team"]["motto"]%></p>
+  <p>  Your superheroes are: </p>
+  <p>  #1</p>
+  <p>    Name: <%=@team.params["team"]["members"]["super1"]["name"]%></p>
+  <p>    Power: <%=@team.params["team"]["members"]["super1"]["power"]%></p>
+  <p>    Bio: <%=@team.params["team"]["members"]["super1"]["bio"]%></p>
+  <p>  #2</p>
+  <p>    Name: <%=@team.params["team"]["members"]["super2"]["name"]%></p>
+  <p>    Power: <%=@team.params["team"]["members"]["super2"]["power"]%></p>
+  <p>    Bio: <%=@team.params["team"]["members"]["super2"]["bio"]%></p>
+
   </body>
 </html>

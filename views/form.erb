@@ -9,13 +9,47 @@
 <form action="/teams" method="post">
 <div>
   <label for="name">Team Name</label>
-  <input id="name" type="text" name="team[name]" value="">
+  <input id="name" type="text" name="team[name]" value="team name">
 </div>
 
 <div>
   <label for="motto">Team Motto</label>
-  <input id="motto" type="text" name="team[motto]" value="">
+  <input id="motto" type="text" name="team[motto]" value="team motto">
 </div>
+
+<!-- Heroes -->
+<div>
+  <label for="name">Superhero Name #1</label>
+  <input id="name" type="text" name="team[superhero][0][name]" value="name">
+</div>
+
+<div>
+  <label for="superpower">Superhero Name #1</label>
+  <input id="superpower" type="text" name="team[superhero][0][power]" value="power">
+</div>
+
+<div>
+  <label for="bio">Superhero Name #1</label>
+  <input id="bio" type="text" name="team[superhero][0][bio]" value="bio">
+</div>
+<!-- Hero 2 -->
+<div>
+  <label for="name">Superhero Name #2</label>
+  <input id="name" type="text" name="team[superhero][1][name]" value="name">
+</div>
+
+<div>
+  <label for="superpower">Superhero Name #2</label>
+  <input id="superpower" type="text" name="team[superhero][1][power]" value="power">
+</div>
+
+<div>
+  <label for="bio">Superhero Name #2</label>
+  <input id="bio" type="text" name="team[superhero][1][bio]" value="bio">
+</div>
+
+<br>
+  <input type="submit" value="Submit your team!">
 </form>
 
   </body>
