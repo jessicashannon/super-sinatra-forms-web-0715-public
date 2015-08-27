@@ -6,13 +6,10 @@ class App < Sinatra::Base
   get "/" do
     erb :"form"
   end
-  #
-  # get "/new" do
-  #   erb :"pirates/new"
-  # end
-  #
+
   post "/teams" do
     @team = Team.new(params)
+    # binding.pry
     erb :"team"
   end
 
